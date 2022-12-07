@@ -1,3 +1,10 @@
+import { Container } from '@/shared/ui/container';
+import styles from './index.module.scss';
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className={styles.footer}>
+      <Container>Footer</Container>
+    </footer>
+  );
 };

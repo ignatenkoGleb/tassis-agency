@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+}
+
+.clear {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.danger {
+  color: var(--color-light);
+  font-weight: 500;
+  border: none;
+  background-color: var(--bg-color-red);
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #cf1a14;
+  }
+}
