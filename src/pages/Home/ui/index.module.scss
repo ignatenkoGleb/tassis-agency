@@ -1,0 +1,64 @@
+.home {
+  margin-top: 155px;
+  margin-bottom: 155px;
+  min-height: 431px;
+  position: relative;
+}
+
+.homeMain {
+  margin-bottom: 196px;
+}
+
+.artwork {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: lowercase;
+  padding-top: 64px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.descr {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 132%;
+  max-width: 345px;
+  padding-bottom: 52px;
+}
+
+.btn {
+  padding: 17px 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.tassis {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 132%;
+}
+
+.socialNetworks {
+  margin-right: -12px;
+}
+
+.homeSecondary {
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,8 +5,13 @@
 }
 
 .logotype {
+  margin-right: auto;
   cursor: pointer;
-  flex: 1;
+  transition: all 0.3s;
+
+  &:hover {
+    scale: 1.05;
+  }
 }
 
 .menuList {
