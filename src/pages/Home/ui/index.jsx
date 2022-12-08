@@ -1,3 +1,5 @@
+import { Container } from '@/shared/ui/container';
+
 export const Home = () => {
-  return <div>Home</div>;
+  return <Container>Home</Container>;
 };

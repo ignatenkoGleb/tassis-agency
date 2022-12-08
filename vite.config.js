@@ -5,6 +5,9 @@ import svgr from 'vite-plugin-svgr';
 import { VitePluginFonts } from 'vite-plugin-fonts';
 
 export default defineConfig({
+  server: {
+    host: true,
+  },
   plugins: [
     svgr(),
     react(),

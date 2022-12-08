@@ -1,14 +1,13 @@
-import { Home } from '@/pages/Home';
-import { Container } from '@/shared/ui/container';
+import { Routing } from '@/pages';
 import { Layout } from '@/shared/ui/layout';
 import './index.scss';
 
 export const App = () => {
   return (
-    <Layout>
-      <Container>
-        <Home />
-      </Container>
-    </Layout>
+    <>
+      <Layout>
+        <Routing />
+      </Layout>
+    </>
   );
 };
