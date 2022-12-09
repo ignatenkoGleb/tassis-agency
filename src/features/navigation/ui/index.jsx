@@ -39,7 +39,7 @@ export const Navigation = () => {
   return (
     <nav className={styles.headerContainer}>
       <Link to='/' className={styles.logotype}>
-        <Logotype />
+        <Logotype className={styles.logotypeImg} />
       </Link>
       <ul className={styles.menuList}>
         {menuLinks.map(({ title, path }) => (
@@ -76,7 +76,7 @@ export const Navigation = () => {
         {t(`navigation.button`)}
       </Button>
       <Button variant='clear' className={styles.mobileMenu}>
-        <MobileMenu />
+        <MobileMenu className={styles.mobileMenuImg} />
       </Button>
     </nav>
   );
