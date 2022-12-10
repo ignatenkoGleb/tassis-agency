@@ -1,0 +1,13 @@
+.menuList {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+
+  @media (max-width: 1040px) {
+    gap: 42px;
+  }
+
+  @media (max-width: 940px) {
+    display: none;
+  }
+}

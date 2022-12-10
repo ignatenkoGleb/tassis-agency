@@ -8,7 +8,11 @@ i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
+
   .init({
+    backend: {
+      loadPath: 'locales/{{lng}}/{{ns}}.json',
+    },
     fallbackLng: 'en',
     debug: import.meta.env.DEV ? true : false,
   });

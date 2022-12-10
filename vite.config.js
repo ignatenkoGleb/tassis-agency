@@ -5,6 +5,7 @@ import svgr from 'vite-plugin-svgr';
 import { VitePluginFonts } from 'vite-plugin-fonts';
 
 export default defineConfig({
+  base: '/tassis-agency/',
   server: {
     host: true,
   },

@@ -1,0 +1,11 @@
+.lngSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.selectedLng {
+  margin-top: 3px;
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--color-red);
+}

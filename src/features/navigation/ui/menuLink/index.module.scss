@@ -1,0 +1,27 @@
+.menuLink {
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+  line-height: 21px;
+}
+
+.menuLink:before {
+  content: '';
+  background-color: var(--color-red);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuLink:hover {
+  background-position: 0;
+  color: var(--color-red);
+}
+
+.menuLink:hover::before {
+  width: 50%;
+}
