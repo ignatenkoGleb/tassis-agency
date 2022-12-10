@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Button } from '@/shared/ui/button';
 import artwork from '../../assets/artwork.png';
+import { FaInstagram, FaTelegramPlane, FaVk, FaRegEnvelope } from 'react-icons/fa';
 import styles from './index.module.scss';
 
 const artworkAnimation = {
@@ -34,6 +35,21 @@ const textAnimation = {
   },
 };
 
+const lowerPartAnimation = {
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay: 2,
+    },
+  },
+};
+
 export const HomeSection = () => {
   const { t } = useTranslation('home');
 
@@ -55,6 +71,15 @@ export const HomeSection = () => {
         <Button className={styles.btn} variant='danger'>
           {t('home.button')}
         </Button>
+      </motion.div>
+      <motion.div className={styles.lowerPart} variants={lowerPartAnimation}>
+        <div className={styles.socials}>
+          <FaRegEnvelope style={{ cursor: 'pointer', height: 26, width: 26 }} />
+          <FaTelegramPlane style={{ cursor: 'pointer', height: 26, width: 26 }} />
+          <FaInstagram style={{ cursor: 'pointer', height: 26, width: 26 }} />
+          <FaVk style={{ cursor: 'pointer', height: 26, width: 26 }} />
+        </div>
+        <p className={styles.lowerTitle}>2022 Tassis Digital Agency</p>
       </motion.div>
     </motion.div>
   );

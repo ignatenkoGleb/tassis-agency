@@ -11,7 +11,6 @@
 }
 
 .subtitle {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: lowercase;
@@ -39,10 +38,9 @@
 }
 
 .descr {
-  font-weight: 700;
   font-size: 20px;
   line-height: 132%;
-  max-width: 345px;
+  max-width: 354px;
   padding-bottom: 52px;
 }
 
@@ -53,8 +51,21 @@
   line-height: 24px;
 }
 
-.tassis {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 132%;
+.lowerPart {
+  margin-top: 230px;
+  margin-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lowerTitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
